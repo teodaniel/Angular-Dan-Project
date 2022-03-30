@@ -1,0 +1,21 @@
+/* Add application styles & imports to this file! */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+/* document styling */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  color: antiquewhite;
+  background: #2c302d;
+}
+
+p {
+  font-size: large;
+}

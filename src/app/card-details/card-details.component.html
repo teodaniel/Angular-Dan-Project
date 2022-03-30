@@ -1,0 +1,10 @@
+<div class="product-card p-3 rounded text-center">
+  <div *ngIf="product">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description | uppercase }}</p>
+    <div class="price">
+      <p>{{ product.price | currency }}</p>
+      <button class="btn buy-btn">Add to cart</button>
+    </div>
+  </div>
+</div>

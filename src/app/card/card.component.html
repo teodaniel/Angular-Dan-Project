@@ -1,0 +1,16 @@
+<section id="cards-section" class="card__container">
+  <div class="card" *ngFor="let product of products">
+    <div class="card__content">
+      <h3 class="card__header">
+        <a [title]="product.name + ' details'">
+          <!-- string interpolation -->
+          {{ product.name }}
+        </a>
+      </h3>
+      <p class="card__info">{{ product.description }}</p>
+      <p class="text-white-50">{{ product.price | currency }}</p>
+      <button class="card__button px-4"
+      [routerLink] = "['/products', product.id]">Buy</button>
+    </div>
+  </div>
+</section>
